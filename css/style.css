@@ -1,70 +1,30 @@
-body, h1, h2, p {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-}
-
 body {
-    background-color: #1e222b;
-    color: #fff;
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
+    background-color:rgb(1, 38, 71)
 }
-
-
-
-
-nav ul {
-    list-style-type: none;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.game-card {
-    background-color: rgb(39, 0, 90); 
-    color: #fff; 
-    padding: 20px;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.game-card img {
-    max-width: 100%;
-    height: auto;
-}
-
-
-footer {
+.container {
     text-align: center;
-    background-color: rgb(9, 48, 77);
-    padding: 10px 0;
+    margin-top: 20px;
+}
+.carousel {
+    max-width: 80%;
+    margin: 0 auto;
+}
+.card {
+    width: 250px;
+    margin: 20px;
+    display: inline-block;
 }
 
+main {
+    padding: 20px;
+}
 
+.center {
+    text-align: center
+}
 .navbar {
     background-color: rgb(12, 50, 78);
-    padding: 20px;
-}
-
-
-.navbar ul {
-    list-style-type: none;
-    text-align: center;
+    padding: 20px
 }
 
 .navbar li {
@@ -85,101 +45,37 @@ footer {
 }
 
 .carousel {
-    
+    max-width: 80%;
     margin: 0 auto;
-    max-width: 700px;
-    padding: 50px;
 }
 
-.carousel-control-prev, .carousel-control-next {
-    position: absolute;
-    top: 50%; /* Center vertically */
-    width: 50px;
-    height: 50px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    border-radius: 50%;
-    transform: translate(0, -50%); /* Center vertically */
+.carousel-inner {
+    text-align: center;
 }
 
-.carousel-control-prev {
-    left: -50px; /* Adjust the distance from the left edge */
-}
-
-.carousel-control-next {
-    right: -50px; /* Adjust the distance from the right edge */
-}
-
-.carousel-control-prev:hover, .carousel-control-next:hover {
-    background-color: rgba(158, 158, 158, 0.8);
+.carousel-item {
+    display: inline-block;
+    float: none; /* Clear the default "float" property */
 }
 
 
-.center {
-    text-align: center
+.container {
+    text-align: center;
 }
 
-
-@media (max-width: 768px) {
+h1 {
+    font-size: 24px;
 }
 
-.carousel-inner .carousel-item.active,
-.carousel-inner .carousel-item-next,
-.carousel-inner .carousel-item-prev {
-    display: flex;
+p {
+    font-size: 16px;
 }
 
-/* display 3 */
-@media (min-width: 768px) {
-
-    .carousel-inner .carousel-item-right.active,
-    .carousel-inner .carousel-item-next {
-        transform: translateX(33.333%);
-    }
-
-    .carousel-inner .carousel-item-left.active,
-    .carousel-inner .carousel-item-prev {
-        transform: translateX(-33.333%);
-    }
-}
-
-.carousel-inner .carousel-item-right,
-.carousel-inner .carousel-item-left {
-    transform: translateX(0);
-}
-
-.custom-card {
-    width: 200px; 
-    height: 200px; 
-
-}
-
-.carousel-inner .carousel-item {
-    display: flex;
-}
-
-.carousel-inner .carousel-item .col-md-3 {
-    flex: 1;
-    margin: 10px;
-}
-
-.carousel-inner .carousel-item .row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-@media (min-width: 768px) {
-    .carousel-inner .carousel-item .row {
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
-
-footer {
-    position: fixed;
-    bottom: 0;
+.navbar {
+    background-color: rgb(12, 50, 78);
+    padding: 20px;
     width: 100%;
-    text-align: center; /* Center the content horizontally */
-    background-color: rgb(9, 48, 77);
-    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
 }
+
