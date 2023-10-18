@@ -1,6 +1,7 @@
-body {
-    background-color:rgb(1, 38, 71)
+body{
+    margin: 0;
 }
+
 .container {
     text-align: center;
     margin-top: 20px;
@@ -14,7 +15,7 @@ body {
     margin: 20px;
     display: inline-block;
 }
-
+ 
 main {
     padding: 20px;
 }
@@ -22,19 +23,34 @@ main {
 .center {
     text-align: center
 }
+
 .navbar {
-    background-color: rgb(12, 50, 78);
-    padding: 20px
+    background-color: #071b31;
+    padding: 20px;
+    width: 100%; 
+    margin: 0 auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
 }
 
 .navbar li {
-    display: inline;
     margin: 0 15px;
+    text-align: center;
 }
 
 .navbar a {
     text-decoration: none;
-    color: #c9c9c9; 
+    color: #c9c9c9;
     font-weight: bold;
     font-size: 18px;
 }
@@ -47,6 +63,7 @@ main {
 .carousel {
     max-width: 80%;
     margin: 0 auto;
+    background-color:#071b31
 }
 
 .carousel-inner {
@@ -55,7 +72,7 @@ main {
 
 .carousel-item {
     display: inline-block;
-    float: none; /* Clear the default "float" property */
+    float: none; 
 }
 
 
@@ -71,11 +88,16 @@ p {
     font-size: 16px;
 }
 
-.navbar {
-    background-color: rgb(12, 50, 78);
-    padding: 20px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; 
+   
 }
 
+.carousel-spacing {
+    margin-bottom: 20px; 
+}
